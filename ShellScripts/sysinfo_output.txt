@@ -1,0 +1,24 @@
+========================================
+System Information Report
+Author: Ayaan Ali
+Roll Number: 2601730076
+Date: Fri Nov 27 09:49:16 IST 2026
+========================================
+
+CPU Information:
+CPU Model:                               Intel(R) Core(TM) i3-1005G1 CPU @ 1.20GHz
+Physical Cores: 2
+Logical CPUs:                                   4
+
+Memory Information:
+Total Memory: 7.7Gi
+Used Memory: 429Mi
+
+Top 3 Processes by CPU Usage:
+    PID COMMAND         %CPU
+      1 systemd          0.0
+    164 bash             0.0
+     76 systemd-udevd    0.0
+
+========================================
+Report generated successfully.
