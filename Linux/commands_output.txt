@@ -1,0 +1,53 @@
+===== ls -la ~ =====
+total 7564
+drwxr-x--- 10 root root    4096 Nov 24 03:40 .
+dr-xr-xr-x 17 root root    4096 Nov 27 09:19 ..
+-rw-------  1 root root   14702 Nov 24 03:40 .bash_history
+-rw-r--r--  1 root root     123 Nov 14 03:28 .gitconfig
+drwxr-xr-x  3 root root    4096 Nov 15 17:04 .local
+drwx------  3 root root    4096 Nov 15 17:04 .postman
+drwx------  2 root root    4096 Nov 15 16:50 .ssh
+drwxr-xr-x  7 root root    4096 Oct 25 22:52 Downloads
+drwxr-xr-x  2 root root    4096 Oct 25 22:47 cse103_backups
+drwxr-xr-x  4 root root    4096 Oct 26 22:25 cse103_lab
+drwxr-xr-x  4 root root    4096 Nov 27 09:28 developer-portfolio
+drwxr-xr-x  2 root root    4096 Oct 25 21:43 junk
+-rwxr-xr-x  1 root root 7683582 Nov 24 00:49 python_basic_certificate.pdf
+-rw-r--r--  1 root root       0 Oct 25 21:34 users
+-rw-r--r--  1 root root       0 Oct 25 21:33 win32
+===== ps aux | head -10 =====
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.1  0.2  27824 16376 ?        Ss   09:19   0:01 /sbin/init
+root           2  0.0  0.0   3820  2524 hvc0     Sl+  09:19   0:00 /init
+root           3  0.0  0.0   3680  2224 hvc0     S+   09:19   0:00 init-watcher
+root           9  0.0  0.0   3820  2296 hvc0     Sl+  09:19   0:00 plan9 --control-socket 7 --log-level 4 --server-fd 8 --pipe-fd 10 --log-truncate
+root          53  0.0  0.1  25876 11816 ?        Ss   09:19   0:00 /usr/lib/systemd/systemd-journald
+root          75  0.0  0.0   9284  4948 ?        Ss   09:19   0:00 /usr/lib/systemd/systemd-nsresourced
+root          76  0.0  0.1  37884 11984 ?        Ss   09:19   0:00 /usr/lib/systemd/systemd-udevd
+root          78  0.0  0.0   9172  4704 ?        Ss   09:19   0:00 /usr/lib/systemd/systemd-userdbd
+dbus         119  0.0  0.0   7796  4132 ?        Ss   09:19   0:00 /usr/bin/dbus-broker-launch --scope system --audit
+===== df -h =====
+Filesystem      Size  Used Avail Use% Mounted on
+none            3.9G     0  3.9G   0% /usr/lib/modules/6.18.58.1-microsoft-standard-WSL2
+/dev/sdb         97M   97M     0 100% /usr/src/linux-headers-6.18.58.1-microsoft-standard-WSL2
+none            3.9G  4.0K  3.9G   1% /mnt/wsl
+drivers         223G  172G   51G  78% /usr/lib/wsl/drivers
+/dev/sdd       1007G  1.2G  955G   1% /
+none            3.9G   32K  3.9G   1% /mnt/wslg
+none            3.9G     0  3.9G   0% /usr/lib/wsl/lib
+rootfs          3.9G  3.4M  3.9G   1% /init
+none            3.9G     0  3.9G   0% /dev
+none            3.9G  432K  3.9G   1% /run
+none            3.9G     0  3.9G   0% /run/lock
+none            3.9G     0  3.9G   0% /run/shm
+none            3.9G   80K  3.9G   1% /mnt/wslg/versions.txt
+none            3.9G   80K  3.9G   1% /mnt/wslg/doc
+C:\             223G  172G   51G  78% /mnt/c
+D:\             655G  561G   95G  86% /mnt/d
+G:\             275G   78G  198G  29% /mnt/g
+none            1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+tmpfs           784M  8.0K  784M   1% /run/user/0
+===== free -h =====
+               total        used        free      shared  buff/cache   available
+Mem:           7.7Gi       404Mi       7.3Gi       4.0Mi        95Mi       7.3Gi
+Swap:          2.0Gi          0B       2.0Gi
